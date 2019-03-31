@@ -1,0 +1,13 @@
+def FizzBuzz(n):
+    v=[]
+    for i in range(1,n+1):
+        if (i % 3 == 0 and i % 5 == 0):
+            v[i-1]="FizzBuzz"
+        elif (i % 3 == 0):
+            v[i-1]="Fizz"
+        elif (i % 5 == 0):
+            v[i-1]="Buzz"
+        else:
+            v[i-1]=to_string(i)
+    return v
+
